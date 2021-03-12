@@ -137,6 +137,19 @@ class Layout implements LayoutInterface, JsonSerializable, ArrayAccess, Arrayabl
     }
 
     /**
+     * Sets the layout's title
+     * 
+     * @param mixed $title 
+     * @return $this 
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
      * Retrieve the layout's fields
      *
      * @return array
